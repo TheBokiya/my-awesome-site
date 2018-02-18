@@ -1,0 +1,12 @@
+.navbar {
+  border-bottom: 1px solid $color-primary;
+}
+
+.navbar-brand {
+  padding-bottom: 0;
+
+  i {
+    font-size: 3em;
+    color: $color-primary;
+  }
+}
