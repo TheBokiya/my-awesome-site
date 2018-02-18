@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Megrim|Roboto:300,400,700');
-// font
 $font-cursive: 'Megrim', cursive;
 $font-default: 'Roboto', sans-serif;
-// color
-$color-primary: #2c3e50;
+$color-primary: #242424;
+@mixin dropshadow() {
+  -webkit-box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.4);
+  -moz-box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.4);
+  box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.4);
+}
