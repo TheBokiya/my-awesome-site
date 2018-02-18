@@ -1,4 +1,5 @@
 .navbar {
+  background: $color-white;
   @include dropshadow();
 }
 
@@ -9,8 +10,45 @@
     font-size: 2.5em;
     color: $color-primary;
     opacity: 0.8;
+
     &:hover {
       opacity: 1;
+    }
+  }
+}
+
+.navbar-nav {
+  .nav-link {
+    margin: 0 10px;
+    font-size: 0.8em;
+    letter-spacing: 0.5em;
+    position: relative;
+    color: $color-primary;
+    text-decoration: none;
+
+    &:hover {
+      color: $color-primary;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: $color-primary;
+      visibility: hidden;
+      -webkit-transform: scaleX(0);
+      transform: scaleX(0);
+      -webkit-transition: all 0.3s ease-in-out 0s;
+      transition: all 0.3s ease-in-out 0s;
+    }
+
+    &:hover:before {
+      visibility: visible;
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
     }
   }
 }

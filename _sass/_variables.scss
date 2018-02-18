@@ -2,6 +2,7 @@
 $font-cursive: 'Megrim', cursive;
 $font-default: 'Roboto', sans-serif;
 $color-primary: #242424;
+$color-white: white;
 @mixin dropshadow() {
   -webkit-box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.4);
   -moz-box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.4);
