@@ -1,16 +1,29 @@
-a,
+p {
+  color: $color-primary;
+  line-height: 2em;
+  font-size: 1em;
+  font-family: $font-default;
+  font-weight: 300;
+}
+
+a.underline {
+  font-weight: 400;
+  color: $color-primary;
+  @include underline($color-primary);
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
-h6,
-p {
-  font-family: $font-default;
-  font-weight: 300;
+h6 {
   color: $color-primary;
+  font-family: $font-default;
+  font-weight: 400;
 }
 
-* {
+.font-icon-lg {
+  font-size: 20em;
   color: $color-primary;
 }
