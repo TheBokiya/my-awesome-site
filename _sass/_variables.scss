@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Megrim|Roboto:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Megrim|Source+Sans+Pro:300,400,700');
 $font-cursive: 'Megrim', cursive;
-$font-default: 'Roboto', sans-serif;
+$font-default: 'Source Sans Pro', sans-serif;
 $color-primary: #242424;
 $color-secondary: #d35400;
 $color-white: white;
@@ -36,4 +36,8 @@ $color-white: white;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
   }
+}
+
+.color-white {
+  color: $color-white;
 }

@@ -1,0 +1,11 @@
+.btn-custom {
+  background-color: transparent;
+  color: white;
+  @include underline($color-white);
+}
+
+.btn {
+  border-radius: 0;
+  font-size: 1.2em;
+  font-weight: 300;
+}
