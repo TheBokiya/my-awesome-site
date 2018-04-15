@@ -4,6 +4,10 @@ $font-default: 'Source Sans Pro', sans-serif;
 $color-primary: #242424;
 $color-secondary: #d35400;
 $color-white: white;
+$sm-device: 576px;
+$md-device: 768px;
+$lg-device: 992px;
+$xl-device: 1200px;
 @mixin dropshadow() {
   -webkit-box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.4);
   -moz-box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.4);
