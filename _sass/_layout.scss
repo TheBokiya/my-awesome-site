@@ -9,10 +9,6 @@ hr {
   margin: 50px 0;
 }
 
-.index-logo {
-  font-size: 10em;
-}
-
 #bg {
   position: fixed;
   top: -50%;
@@ -32,7 +28,8 @@ hr {
 }
 
 .side-info {
-  border-left: 2px solid $color-grey;
+  font-size: 0.9em;
+  border-left: 2px solid $color-secondary;
   padding-left: 20px;
   h5 {
     font-weight: 400;

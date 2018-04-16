@@ -1,6 +1,7 @@
 a,
-li,
-p {
+div,
+p,
+span {
   color: $color-primary;
   line-height: 2em;
   font-size: 1em;
@@ -20,17 +21,17 @@ h3,
 h4,
 h5,
 h6 {
-  color: $color-primary;
+  text-transform: uppercase;
+  color: $color-secondary;
   font-family: $font-default;
-  font-weight: 300;
+  font-weight: 700;
+  letter-spacing: 6px;
 }
 
-.sub-heading {
-  border-left: 5px solid $color-grey;
-  padding-left: 10px;
-  height: 50px;
-  margin: 30px 0;
-  letter-spacing: 0.1em;
+ul {
+  li {
+    text-transform: lowercase;
+  }
 }
 
 .font-icon-lg {
@@ -38,6 +39,21 @@ h6 {
   color: $color-primary;
 }
 
-.index-page {
-  color: white;
+.index-logo{
+  font-family: $font-cursive;
+  font-size: 5em;
+}
+
+.highlight {
+  color: $color-secondary;
+}
+
+.index-text {
+  font-size: 1.2em;
+}
+
+.sub-index {
+  opacity: 50%;
+  font-size: 2em;
+  font-weight: 700;
 }

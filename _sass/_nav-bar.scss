@@ -19,11 +19,13 @@
 
 .navbar-nav {
   .nav-link {
+    text-transform: uppercase;
+    color: $color-secondary !important;
+    font-weight: 700;
     margin: 0 10px;
     font-size: 0.8em;
-    letter-spacing: 0.5em;
-    color: $color-primary;
+    letter-spacing: 6px;
 
-    @include underline($color-primary);
+    @include underline($color-secondary);
   }
 }

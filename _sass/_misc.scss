@@ -1,0 +1,20 @@
+hr {
+  border: none;
+  /* Set the hr color */
+  color: $color-secondary;
+  /* old IE */
+  background-color: $color-secondary;
+  /* Modern Browsers */
+  &.thicc {
+    height: 8px;
+    margin: 5px 0;
+  }
+
+  &.thin {
+    height: 1px;
+  }
+}
+
+.border-left-thicc {
+  border-left: 10px solid $color-secondary;
+}
