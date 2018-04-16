@@ -1,0 +1,15 @@
+.project-link {
+      filter: grayscale(100%);
+      @include transition(filter .3s ease);
+  &:hover {
+    text-decoration: none;
+    filter: grayscale(0);
+  }
+  .img-thumbnail {
+    border: none;
+  }
+  .label {
+    color: $color-secondary;
+    font-weight: 400;
+  }
+}
