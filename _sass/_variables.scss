@@ -4,6 +4,7 @@ $font-default: 'Source Sans Pro', sans-serif;
 $color-primary: #242424;
 $color-secondary: #d35400;
 $color-white: white;
+$color-orange: #F3904F;
 $sm-device: 576px;
 $md-device: 768px;
 $lg-device: 992px;
@@ -44,4 +45,8 @@ $xl-device: 1200px;
 
 .color-white {
   color: $color-white;
+}
+
+.opacity-50 {
+  opacity: 0.50;
 }
