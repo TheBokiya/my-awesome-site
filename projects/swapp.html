@@ -1,0 +1,64 @@
+---
+layout: default
+title: SWAPP: a sleep-wake app
+---
+{% include nav-bar.html %}
+
+<div class="container">
+  <h1>SWAPP</h1>
+  <h5 class="lc mb-5">a sleep-wake app</h5>
+  <div class="row">
+    <div class="col-md-8 col-xs-12">
+      <img src="/assets/img/swapp/swapp-05.png" class="img-fluid" alt="Responsive image">
+      <h5>Problem</h5>
+      <p>Parents of children with brain-based disabilities record a large amount of information about their child’s medication, sleep, and wake behaviours. Every parent has their own. The sheer quantity of medical and non-medical records can be overwhelming for the parents and the clinicians.</p>
+      <h5>Solution</h5>
+      <p>We created SWAPP to help parents and clinicians track a child’s behaviours. The app adopts a user-centered approach to collecting information, allowing parents to ‘own their data’ and individualize what they keep track of on a long-term bases, while also tracking short-term data that is requested by a clinician — such as positive or negative effects of a prescribed medication — allowing for immediate follow up, if necessary. </p>
+      <hr class="thin">
+      <div class="row">
+        <div class="col-md-6 col-xs-12">
+          <h5>responsibilities</h5>
+          <ul class="list-unstyled">
+            <li>Assisted with the wireframes</li>
+            <li>Implemented the design</li>
+            <li>Collaborated with other designers to come up with design solutions</li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-xs-12">
+          <h5>outcome</h5>
+          <ul class="list-unstyled">
+            <li>Able to implement the design that was passed on from the design team</li>
+            <li>Able to make changes and adjustments by collaborating with the design team</li>
+            <li>Able to build a full functioning web app with a small team (a back-end + a front-end)</li>
+          </ul>
+        </div>
+      </div>
+      <hr class="thin">
+      {% for image in site.static_files %}
+        {% if image.path contains 'img/swapp' %}
+          <img src="{{ site.baseurl }}{{ image.path}} " alt="" class="img-fluid mb-3">
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    <div class="col-md-3 offset-md-1 d-none d-sm-block">
+      <div class="mb-5 side-info">
+        <h5>technology</h5>
+        <ul class="list-unstyled">
+          <li>Rails</li>
+          <li>HTML</li>
+          <li>JS</li>
+          <li>SASS</li>
+        </ul>
+      </div>
+      <div class="mb-5 side-info">
+        <h5>Collaborators</h5>
+        <ul class="list-unstyled">
+          <li>Simon Fraser University</li>
+          <li>BC Children's Hospital</li>
+          <li>Emily Carr University</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
