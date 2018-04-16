@@ -36,7 +36,7 @@ title: SWAPP: a sleep-wake app
       <hr class="thin">
       {% for image in site.static_files %}
         {% if image.path contains 'img/swapp' %}
-          <img src="{{ site.baseurl }}{{ image.path}} " alt="" class="img-fluid mb-3">
+          <img src="{{ site.baseurl }}{{ image.path}} " alt="" class="img-fluid mb-3 mx-auto d-block">
         {% endif %}
       {% endfor %}
     </div>
