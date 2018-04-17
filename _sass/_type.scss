@@ -60,3 +60,8 @@ ul {
   font-size: 2em;
   font-weight: 700;
 }
+
+.fine-print {
+  font-size: 0.8em;
+  color: transparentize($color-primary, 0.4);
+}

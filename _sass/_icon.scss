@@ -1,0 +1,16 @@
+.contact-icon {
+  svg {
+    border: 1px solid transparentize($color-secondary, 0.7);
+    border-bottom-width: 3px;
+    border-bottom-color: $color-secondary;
+    padding: 15px;
+    font-size: 4em;
+    color: $color-secondary;
+    @include transition(background-color 0.3s ease);
+    @include transition(color 0.3s ease);
+    &:hover {
+      background-color: $color-secondary;
+      color: $color-white;;
+    }
+  }
+}
