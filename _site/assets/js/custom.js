@@ -11,3 +11,8 @@ $('#return-to-top').click(function() { // When arrow is clicked
     scrollTop: 0 // Scroll to top of body
   }, 500);
 });
+
+//Force turbolinks to load fontawesome
+$(document).on("turbolinks:load", function(){
+  return FontAwesome.dom.i2svg();
+})
