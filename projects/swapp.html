@@ -36,7 +36,7 @@ title: SWAPP
       <hr class="thin">
       {% for image in site.static_files %}
         {% if image.path contains 'img/swapp' %}
-          <img src="{{ site.baseurl }}{{ image.path}} " alt="" class="img-fluid mb-3 mx-auto d-block">
+          <img data-src="{{ site.baseurl }}{{ image.path}} " alt="" class="img-fluid mb-3 mx-auto d-block">
         {% endif %}
       {% endfor %}
     </div>
