@@ -16,8 +16,11 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+  <!-- <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet"> -->
   <link rel="stylesheet" href="/assets/css/animate.css">
   <link rel="stylesheet" href="/assets/css/stylesheet.css">
+
+  <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
   <title>Project MOMO</title>
 </head>
 
@@ -41,13 +44,13 @@
           <a class="nav-link" href="/projects.html">PROJECTS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/interest.html">INTEREST</a>
+          <a class="nav-link" href="/interests.html">INTERESTS</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/about.html">ABOUT</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">CONTACT</a>
+          <a class="nav-link" href="/contact.html">CONTACT</a>
         </li>
       </ul>
     </div>
@@ -261,7 +264,7 @@
       
     </div>
 
-    <div class="col-md-3 offset-md-1 d-none d-sm-block">
+    <div class="col-md-3 offset-md-1 col-xs-12">
       <div class="mb-5 side-info">
         <h5>application</h5>
         <ul class="list-unstyled">
@@ -283,36 +286,31 @@
         </ul>
       </div>
     </div>
-    <div class="col-md-12 d-block d-sm-none">
-      <div class="card mb-1">
-        <div class="card-body">
-          <h5 class="card-title">application</h5>
-          <ul class="list-inline">
-            <li class="list-inline-item">Ardruino</li>
-          </ul>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">collaborators</h5>
-          <ul class="list-inline">
-            <li class="list-inline-item">Ivor Sangala</li>
-            <li class="list-inline-item">Kyle Historillo</li>
-            <li class="list-inline-item">Tiffany Chang</li>
-          </ul>
-        </div>
-      </div>
-    </div>
   </div>
 </div>
 
 
-
+  <a href="javascript:" id="return-to-top"><i class="fas fa-angle-double-up"></i></a>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="/assets/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    // ===== Scroll to Top ====
+    $(window).scroll(function() {
+      if ($(this).scrollTop() >= 50) { // If page is scrolled more than 50px
+        $('#return-to-top').fadeIn(200); // Fade in the arrow
+      } else {
+        $('#return-to-top').fadeOut(200); // Else fade out the arrow
+      }
+    });
+    $('#return-to-top').click(function() { // When arrow is clicked
+      $('body,html').animate({
+        scrollTop: 0 // Scroll to top of body
+      }, 500);
+    });
+  </script>
 </body>
 
 </html>

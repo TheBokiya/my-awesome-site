@@ -28,3 +28,7 @@
     @include underline($color-secondary);
   }
 }
+
+.navbar-toggler{
+  border: none;
+}
