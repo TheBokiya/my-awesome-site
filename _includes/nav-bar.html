@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light fixed-top animated fadeInDown">
   <div class="container">
-    <a class="navbar-brand" href="/index.html">
+    <a class="navbar-brand" href="index.html">
       <i class="icon-logo-text d-none d-sm-block"></i>
       <i class="icon-logo-block d-block d-sm-none"></i>
     </a>
@@ -10,21 +10,11 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
+        {% for item in site.data.pagelist.docs %}
         <li class="nav-item">
-          <a class="nav-link" href="/index.html">HOME <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="{{ item.url }}" alt="{{ item.title }}">{{ item.title }}</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/projects.html">PROJECTS</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/interests.html">INTERESTS</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/about.html">ABOUT</a>
-        </li>
-        <!-- <li class="nav-item">
-          <a class="nav-link" href="/contact.html">CONTACT</a>
-        </li> -->
+        {% endfor %}
       </ul>
     </div>
   </div>

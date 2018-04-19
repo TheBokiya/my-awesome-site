@@ -18,18 +18,28 @@ title: Projects
     <div class="col-md-10 col-12">
       <h5 class="mb-4">ux/ui design + development</h5>
       <div class="row">
-        <div class="col-md-2 col-6">
-          <a href="/projects/swapp.html" class="project-link">
+        {% for item in site.data.pagelist.docs %}
+          {% for entry in item.subfolderitems %}
+          <div class="col-md-2 col-6">
+            <a href="{{ entry.url }}" class="project-link">
+              <img data-src="assets/img/thumbnails/{{ entry.thumbnail }}" class="img-thumbnail mx-auto d-block" alt="...">
+              <div class="text-center label">{{ entry.page }}</div>
+            </a>
+          </div>
+          {% endfor %}
+        {% endfor %}
+        <!-- <div class="col-md-2 col-6">
+          <a href="projects/swapp.html" class="project-link">
             <img data-src="assets/img/thumbnails/swapp_thumb.png" class="img-thumbnail mx-auto d-block" alt="...">
             <div class="text-center label">swapp</div>
           </a>
         </div>
         <div class="col-md-2 col-6">
-          <a href="/projects/fam.html" class="project-link">
+          <a href="fam.html" class="project-link">
             <img data-src="assets/img/thumbnails/fam_thumb.png" class="img-thumbnail mx-auto d-block" alt="...">
             <div class="text-center label">fam</div>
           </a>
-        </div>
+        </div> -->
       </div>
       <h5 class="mt-5 mb-4">visual analytics</h5>
       <div class="row">

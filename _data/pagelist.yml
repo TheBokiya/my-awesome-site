@@ -1,0 +1,21 @@
+docs_list_title: Page URL
+docs:
+
+- title: Home
+  url: index.html
+
+- title: Projects
+  url: projects.html
+  subfolderitems:
+    - project: Project MOMO
+      thumbnail: momo_thumb.png
+      url: projects/momo.html
+    - project: SWAPP
+      thumbnail: swapp_thumb.png
+      url: projects/swapp.html
+
+- title: Interests
+  url: interests.html
+
+- title: About
+  url: about.html
