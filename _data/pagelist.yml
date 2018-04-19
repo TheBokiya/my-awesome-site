@@ -7,12 +7,22 @@ docs:
 - title: Projects
   url: projects.html
   subfolderitems:
-    - project: Project MOMO
-      thumbnail: momo_thumb.png
-      url: projects/momo.html
-    - project: SWAPP
-      thumbnail: swapp_thumb.png
-      url: projects/swapp.html
+    - project_type: UX/UI Design + Development
+      subsubfolderitems:
+      - project: SWAPP
+        thumbnail_url: assets/img/thumbnails/swapp_thumb.png
+        url: projects/swapp.html
+      - project: FAM
+        thumbnail_url: assets/img/thumbnails/fam_thumb.png
+        url: projects/fam.html
+
+    - project_type: Visual Analytics
+
+    - project_type: Critical Design
+      subsubfolderitems:
+      - project: Project MOMO
+        thumbnail_url: assets/img/thumbnails/momo_thumb.png
+        url: projects/momo.html
 
 - title: Interests
   url: interests.html
