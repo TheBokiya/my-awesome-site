@@ -16,7 +16,7 @@ docs:
         thumbnail_url: assets/img/thumbnails/fam_thumb.png
         url: projects/fam.html
 
-    - project_type: Visual Analytics
+    # - project_type: Visual Analytics
 
     - project_type: Critical Design
       subsubfolderitems:
