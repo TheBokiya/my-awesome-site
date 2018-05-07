@@ -14,16 +14,44 @@ title: About
       <p>For the past 5 years, I've worked on a number of web development projects mainly as a front-end developer. I worked with ASP.NET MVC for a period of time and have since shifted majority of my work toward Ruby on Rails. Currently, looking to get my hands dirty with Javascript frameworks like Angular and React.</p>
     </div>
   </div>
-  <hr class="thin">
-  <h3>Qualifications</h3>
+  <!-- <hr class="thin"> -->
+  <h3 class="mt-5">Qualifications</h3>
   <div class="row mt-5">
     <div class="col-md-6 col-xs-12">
       <h5 class="mb-3">experience</h5>
       {% for item in site.data.experiencelist.docs %}
       <div class="mb-5 side-info">
-        <div><strong>{{ item.position }}</strong>, {{ item. company }}</div>
-        <div><i>{{ item.location }}</i></div>
-        <div>{{ item.timeframe }}</div>
+        <div class="d-none d-sm-block"><strong>{{ item.position }}</strong>&emsp;|&emsp;{{ item.timeframe }}</div>
+        <div class="d-block d-sm-none"><strong>{{ item.position }}</strong></div>
+        <div class="d-block d-sm-none">{{ item.timeframe }}</div>
+        <div>{{ item.company }}</div>
+        <div class="small">{{ item.location }}</div>
+        <!-- <div>{{ item.timeframe }}</div> -->
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="col-md-6 col-xs-12">
+      <h5 class="mb-3">education</h5>
+      {% for item in site.data.educationlist.docs %}
+      <div class="mb-5 side-info">
+        <div class="d-none d-sm-block"><strong>{{ item.school }}</strong>&emsp;|&emsp;{{ item.timeframe }}</div>
+        <div class="d-block d-sm-none"><strong>{{ item.school }}</strong></div>
+        <div class="d-block d-sm-none">{{ item.timeframe }}</div>
+        <div>{{ item.degree }}</div>
+        <div class="small">{{ item.location }}</div>
+        <!-- <div>{{ item.timeframe }}</div> -->
+      </div>
+      {% endfor %}
+
+      <h5 class="mb-3">honours + awards</h5>
+      {% for item in site.data.awardlist.docs %}
+      <div class="mb-5 side-info">
+        <div class="d-none d-sm-block"><strong>{{ item.award }}</strong>&emsp;|&emsp;{{ item.timeframe }}</div>
+        <div class="d-block d-sm-none"><strong>{{ item.award }}</strong></div>
+        <div class="d-block d-sm-none">{{ item.timeframe }}</div>
+        <div class="small">{{ item.location }}</div>
+        <!-- <div>{{ item.timeframe }}</div> -->
       </div>
       {% endfor %}
     </div>
