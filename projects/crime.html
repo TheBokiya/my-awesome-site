@@ -1,0 +1,66 @@
+---
+layout: default
+title: Crime, Climate & Population
+---
+{% include nav-bar.html %}
+{% include base.html %}
+
+<div class="container">
+  <h1 class="mb-5">Crime, Climate & Population</h1>
+  <h5 class="lc mb-5"></h5>
+  <div class="row">
+    <div class="col-md-8 col-xs-12">
+      <div class="embed-responsive embed-responsive-16by9 mb-3">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/AW8lF-7vvKk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+      <p>Crime, Climate & Population is a project that a partner and I made for Visual Analytics class. This project aims to answer whether there's a correlation between crime rate, annual climate and population in the U.S. The system reads three different datasets (csv files), crime rate data, climate data and population data. The data is presented using choropleth map to allow easy analysis and interaction with each individual state. </p>
+      <hr class="thin">
+      <div class="row">
+        <div class="col-md-6 col-xs-12">
+          <h5>responsibilities</h5>
+          <ul class="list-unstyled">
+            <li>Researching and retrieving the dataset</li>
+            <li>Identifying what type of questions is the visualization supposed to answer</li>
+            <li>Designing the visual representation of the collected dataset</li>
+            <li>Developing the prototype</li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-xs-12">
+          <h5>outcome</h5>
+          <ul class="list-unstyled">
+            <li>Able to work with both Processing and Eclipse to build a visual representation.</li>
+            <li>Able to design and develop a good visual representation system to shows the data</li>
+            <li>Able to analyze and work with large amount of data</li>
+          </ul>
+        </div>
+      </div>
+      <hr class="thin">
+      {% for image in site.static_files %}
+        {% if image.path contains 'img/crime' %}
+          <img data-src="{{ base }}/{{ image.path}} " alt="" class="img-fluid mb-3 mx-auto d-block">
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    <div class="col-md-3 offset-md-1 col-xs-12">
+      <div class="mb-5 side-info">
+        <h5>technology</h5>
+        <ul class="list-unstyled">
+          <li>Processing</li>
+          <li>ControlP5</li>
+          <li><a href="http://unfoldingmaps.org/" class="text-link" target="_blank">Unfolding Maps</a></li>
+        </ul>
+      </div>
+      <div class="mb-5 side-info">
+        <h5>Collaborator</h5>
+        <ul class="list-unstyled">
+          <li>Spandan Alfred Rodrigues</li>
+        </ul>
+      </div>
+
+      <div class="mb-5 side-info">
+        <a href="https://github.com/TheBokiya/Crime--Climate---Population" target="_blank" class="icon-link"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </div>
+</div>

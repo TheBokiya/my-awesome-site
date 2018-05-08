@@ -1,0 +1,83 @@
+---
+layout: default
+title: Movie Ratings Viz
+---
+{% include nav-bar.html %}
+{% include base.html %}
+
+<div class="container">
+  <h1>Movie Ratings Viz</h1>
+  <h5 class="lc mb-5">A E S T H E T I C</h5>
+  <div class="row">
+    <div class="col-md-8 col-xs-12">
+      <div class="embed-responsive embed-responsive-16by9 mb-3">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/SfwQsnqXVQ4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+      <p>This is a personal project that I've recently worked on. The objective of this project is to allow myself to explore and experiment what can be done by combining JavaFX and CSV data. This page will not be the same as other portfolio project pages on this site as I want this to be a project showcase and a blog post about the project, because why not?</p>
+
+      <hr class="thin">
+      <div class="row">
+        <div class="col-md-6 col-xs-12">
+          <h5>responsibilities</h5>
+          <ul class="list-unstyled">
+            <li>Researching for appropriate data and toolset to be used for the project</li>
+            <li>Developing the prototype</li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-xs-12">
+          <h5>outcome</h5>
+          <ul class="list-unstyled">
+            <li>Able to understand and combine CSV data with JAVAFX to create a visualization</li>
+          </ul>
+        </div>
+      </div>
+      <hr class="thin">
+
+      <p>Before I started working on this project, I knew I wanted to work with CSV data and JavaFX. I just wasn't sure what kind of data I'm interested in working on. I came across a movie dataset in CSV file format that has ratings information about movies and I felt that this would be a fun and interesting project to work on. In this post, I will discuss about the features implemented into the visualization, approaches and challenges that came up during the development process. Source code can be accessed through GitHub.</p>
+
+      <img data-src="{{ base }}/assets/img/movie_ratings/movie_ratings-04.png" alt="" class="img-fluid mb-3 mx-auto d-block">
+
+      <p>The UI of the applcation is split into two parts, the canvas and the control toolbar. The canvas holds all the drawings and manipulations of the circles while the toolbar holds necessary UI control components that allows the user to interact with the data. These are the UI control components.</p>
+
+      <ul class="list-unstyled">
+        <li><strong>Year slider</strong>: allows the user to control the year that movies are released between 1970-2005</li>
+        <li><strong>Show All</strong>: would tell the application to disable the year slider control and show all movies between 1970-2005</li>
+        <li><strong>Genre toggle buttons</strong>: toggle the canvas between different genres, action, animation, comedy, drama, comentary, romance and short film.</li>
+      </ul>
+
+      <img data-src="{{ base }}/assets/img/movie_ratings/movie_ratings-05.png" alt="" class="img-fluid mb-3 mx-auto d-block">
+      <img data-src="{{ base }}/assets/img/movie_ratings/movie_ratings-06.png" alt="" class="img-fluid mb-3 mx-auto d-block">
+      <img data-src="{{ base }}/assets/img/movie_ratings/movie_ratings-07.png" alt="" class="img-fluid mb-3 mx-auto d-block">
+      <img data-src="{{ base }}/assets/img/movie_ratings/movie_ratings-08.png" alt="" class="img-fluid mb-3 mx-auto d-block">
+      <img data-src="{{ base }}/assets/img/movie_ratings/movie_ratings-09.png" alt="" class="img-fluid mb-3 mx-auto d-block">
+      <img data-src="{{ base }}/assets/img/movie_ratings/movie_ratings-10.png" alt="" class="img-fluid mb-3 mx-auto d-block">
+      <img data-src="{{ base }}/assets/img/movie_ratings/movie_ratings-11.png" alt="" class="img-fluid mb-3 mx-auto d-block">
+
+      <p>Various interactions are also implemented in this application. Circles change the fill and stroke color when mouse is hovered over and change back when the mouse leave.</p>
+      <img data-src="{{ base }}/assets/img/movie_ratings/movie_ratings-01.gif" alt="" class="img-fluid mb-3 mx-auto d-block">
+      <img data-src="{{ base }}/assets/img/movie_ratings/movie_ratings-02.gif" alt="" class="img-fluid mb-3 mx-auto d-block">
+
+      <p>Circles can also be moved independently around the canvas.</p>
+      <img data-src="{{ base }}/assets/img/movie_ratings/movie_ratings-03.gif" alt="" class="img-fluid mb-3 mx-auto d-block">
+
+      <p>Last but not least, the title and rating of the movie is displayed on the toolbar when the circle is clicked.</p>
+      <img data-src="{{ base }}/assets/img/movie_ratings/movie_ratings-12.gif" alt="" class="img-fluid mb-3 mx-auto d-block">
+
+      <p>Obviously, this project can be improved. My future plans for this project are to implement a search option that allows the user to type in the movie's title. Other search filter algorithms should be implemented as well such filter the movies by ratings. I'd also like to improve the application in a way that would support a movie with multiple types of genres because currently it can only switch between any individual genre.</p>
+    </div>
+
+    <div class="col-md-3 offset-md-1 col-xs-12">
+      <div class="mb-5 side-info">
+        <h5>technology</h5>
+        <ul class="list-unstyled">
+          <li>Java</li>
+          <li>JavaFX</li>
+        </ul>
+      </div>
+
+      <div class="mb-5 side-info">
+        <a href="https://github.com/TheBokiya/MovieProject" target="_blank" class="icon-link"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </div>
+</div>

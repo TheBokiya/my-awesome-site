@@ -24,12 +24,21 @@ docs:
       - project: Exploring User-Definable Graph Layouts
         thumbnail_url: assets/img/thumbnails/udgl_thumb.png
         url: projects/udgl.html
+      - project: Crime, Climate & Population
+        thumbnail_url: assets/img/thumbnails/crimerate_thumb.png
+        url: projects/crime.html
+      - project: Movie Ratings Viz
+        thumbnail_url: assets/img/thumbnails/movie_ratings_thumb.png
+        url: projects/movieratings.html
 
-    - project_type: Critical Design
+    - project_type: Critical Design + Heuristic Evaluation
       subsubfolderitems:
       - project: Project MOMO
         thumbnail_url: assets/img/thumbnails/momo_thumb.png
         url: projects/momo.html
+      - project: Science World Evaluation
+        thumbnail_url: assets/img/thumbnails/scienceworld_thumb.png
+        url: projects/scienceworld.html
 
 # - title: Interests
 #   url: interests.html
