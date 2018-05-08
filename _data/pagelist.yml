@@ -15,8 +15,15 @@ docs:
       - project: FAM
         thumbnail_url: assets/img/thumbnails/fam_thumb.png
         url: projects/fam.html
+      - project: Whatsapp [Concept]
+        thumbnail_url: assets/img/thumbnails/whatsapp_thumb.png
+        url: projects/whatsapp.html
 
-    # - project_type: Visual Analytics
+    - project_type: Visual Analytics
+      subsubfolderitems:
+      - project: Exploring User-Definable Graph Layouts
+        thumbnail_url: assets/img/thumbnails/udgl_thumb.png
+        url: projects/udgl.html
 
     - project_type: Critical Design
       subsubfolderitems:
@@ -24,8 +31,8 @@ docs:
         thumbnail_url: assets/img/thumbnails/momo_thumb.png
         url: projects/momo.html
 
-- title: Interests
-  url: interests.html
+# - title: Interests
+#   url: interests.html
 
 - title: About
   url: about.html

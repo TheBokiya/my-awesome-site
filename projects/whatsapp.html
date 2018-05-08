@@ -1,0 +1,51 @@
+---
+layout: default
+title: Whatsapp
+---
+{% include nav-bar.html %}
+{% include base.html %}
+
+<div class="container">
+  <h1 class="mb-5">Whatsapp - Conceptual Design</h1>
+  <h5 class="lc mb-5">an alternative ui design</h5>
+  <div class="row">
+    <div class="col-md-8 col-xs-12">
+      <img src="{{ base }}/assets/img/whatsapp/whatsapp-02.png" class="img-fluid" alt="Responsive image">
+      <p>As a regular WhatsApp user, I believe WhatsApp's UI can be improved to provide a better user experience than the current design. This is my personal project that I worked on by designing an alternative WhatsApp's UI for iOS 7. Minimalistic design with clear sense of app navigation and context would give the user the freedom to control the flow of the app. It's not always about how things look, but it's also about the flow and the functionalties of a product. True story.</p>
+      <hr class="thin">
+      <div class="row">
+        <div class="col-md-6 col-xs-12">
+          <h5>responsibilities</h5>
+          <ul class="list-unstyled">
+            <li>Mocking and designing the reimagined UI</li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-xs-12">
+          <h5>outcome</h5>
+          <ul class="list-unstyled">
+            <li>Understanding the design guidelines and requirements for iOS 7 devices</li>
+            <li>Able to do something fun, enjoyable while at the same time not wasting time while being idle.</li>
+          </ul>
+        </div>
+      </div>
+      <hr class="thin">
+      {% for image in site.static_files %}
+        {% if image.path contains 'img/whatsapp' %}
+          <img data-src="{{ base }}/{{ image.path}} " alt="" class="img-fluid mb-3 mx-auto d-block">
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    <div class="col-md-3 offset-md-1 col-xs-12">
+      <div class="mb-5 side-info">
+        <h5>technology</h5>
+        <ul class="list-unstyled">
+          <li>Pencils</li>
+          <li>Papers</li>
+          <li>Adobe Illustrator</li>
+          <li>Adobe Photoshop</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
