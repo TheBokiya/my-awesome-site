@@ -15,6 +15,19 @@ a.underline {
   @include underline($color-orange);
 }
 
+a {
+  color: $color-secondary;
+
+  &.text-link {
+    padding-bottom: 5px;
+    @include underline($color-secondary);
+  }
+
+  &.icon-link {
+    font-size: 4em;
+  }
+}
+
 h1,
 h2,
 h3,
@@ -26,6 +39,7 @@ h6 {
   font-family: $font-default;
   font-weight: 700;
   letter-spacing: 6px;
+
   &.lc {
     text-transform: lowercase;
   }
@@ -42,7 +56,7 @@ ul {
   color: $color-primary;
 }
 
-.index-logo{
+.index-logo {
   font-family: $font-cursive;
   font-size: 5em;
 }
