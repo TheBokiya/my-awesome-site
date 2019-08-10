@@ -28,5 +28,8 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+# Ignore for Jekyll files
+_site/
+node_modules/
 
 # End of https://www.gitignore.io/api/macos
