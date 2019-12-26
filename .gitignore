@@ -31,5 +31,6 @@ Temporary Items
 # Ignore for Jekyll files
 _site/
 node_modules/
+.sass-cache/
 
 # End of https://www.gitignore.io/api/macos
