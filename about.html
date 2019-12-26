@@ -10,7 +10,7 @@ title: About
   <h5>Knowledge is power.</h5>
   <div class="row mt-5">
     <div class="col-md-4">
-      <img data-src="{{ base }}/assets/img/profile_picture.png" alt="Profile Picture" class="img-fluid mb-3">
+      <img data-src="{{ base }}/assets/img/profile_pic.jpg" alt="Profile Picture" class="img-fluid mb-3">
     </div>
     <div class="col-md-8">
       <p>As an individual who is intrigued by how people and technology intertwine, I have developed interests in UX Design, Visual Analytics and Web technologies. My interests take me everywhere in the scope of HCI from designing graphical user interfaces for mobile apps to explore new algorithms to support user definable graph layout in visual analytics. I have shaped myself into a self-disciplined person capable of working well independently or in a team.</p>
@@ -27,7 +27,11 @@ title: About
         <div class="d-none d-sm-block"><strong>{{ item.position }}</strong>&emsp;|&emsp;{{ item.timeframe }}</div>
         <div class="d-block d-sm-none"><strong>{{ item.position }}</strong></div>
         <div class="d-block d-sm-none">{{ item.timeframe }}</div>
-        <div>{{ item.company }}</div>
+        {% if item.link %}
+          <div><a href="{{ item.link }}">{{ item.company }}</a></div>
+        {% else %}
+          <div>{{ item.company }}</div>
+        {% endif %}
         <div class="small">{{ item.location }}</div>
         <!-- <div>{{ item.timeframe }}</div> -->
       </div>

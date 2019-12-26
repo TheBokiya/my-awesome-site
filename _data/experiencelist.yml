@@ -1,10 +1,21 @@
 docs_list_title: Experience
 docs:
 
-- position: Lead Data Analyst
+- position: Co-Founder
+  company: MUCS by mo
+  link: https://www.instagram.com/mucsbymo/
+  location: Phnom Penh, Cambodia
+  timeframe: August 2018 - Present
+
+- position: Frontend Team Lead x UI/UX Lead
   company: Sabay Digital Corp.
   location: Phnom Penh, Cambodia
   timeframe: May 2018 - Present
+
+- position: General Advisor
+  company: CF Mey Co., Ltd
+  location: Phnom Penh, Cambodia
+  timeframe: October 2018 - Present
 
 - position: Research Assistant
   company: Simon Fraser University
@@ -17,7 +28,7 @@ docs:
   timeframe: January 2016 - December 2016
 
 - position: UX/UI Designer/Developer
-  company: Radiant communications
+  company: Radiant Communications
   location: Vancouver, BC Canada
   timeframe: February 2014 - July 2015
 

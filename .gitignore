@@ -32,5 +32,6 @@ Temporary Items
 _site/
 node_modules/
 .sass-cache/
+vendor/
 
 # End of https://www.gitignore.io/api/macos
