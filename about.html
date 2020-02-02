@@ -6,7 +6,6 @@ title: About
 {% include base.html %}
 <div class="container">
   <h1>About Me</h1>
-  <!-- <p>where to even begin&hellip;</p> -->
   <h5>Knowledge is power.</h5>
   <div class="row mt-5">
     <div class="col-md-4">
@@ -33,34 +32,35 @@ title: About
           <div>{{ item.company }}</div>
         {% endif %}
         <div class="small">{{ item.location }}</div>
-        <!-- <div>{{ item.timeframe }}</div> -->
       </div>
       {% endfor %}
     </div>
 
     <div class="col-md-6 col-xs-12">
-      <h5 class="mb-3">education</h5>
-      {% for item in site.data.educationlist.docs %}
-      <div class="mb-5 side-info">
-        <div class="d-none d-sm-block"><strong>{{ item.school }}</strong>&emsp;|&emsp;{{ item.timeframe }}</div>
-        <div class="d-block d-sm-none"><strong>{{ item.school }}</strong></div>
-        <div class="d-block d-sm-none">{{ item.timeframe }}</div>
-        <div>{{ item.degree }}</div>
-        <div class="small">{{ item.location }}</div>
-        <!-- <div>{{ item.timeframe }}</div> -->
+      <div class="mb-3">
+        <h5 class="mb-3">education</h5>
+        {% for item in site.data.educationlist.docs %}
+        <div class="mb-5 side-info">
+          <div class="d-none d-sm-block"><strong>{{ item.school }}</strong>&emsp;|&emsp;{{ item.timeframe }}</div>
+          <div class="d-block d-sm-none"><strong>{{ item.school }}</strong></div>
+          <div class="d-block d-sm-none">{{ item.timeframe }}</div>
+          <div>{{ item.degree }}</div>
+          <div class="small">{{ item.location }}</div>
+        </div>
+        {% endfor %}
       </div>
-      {% endfor %}
 
-      <h5 class="mb-3">honours + awards</h5>
-      {% for item in site.data.awardlist.docs %}
-      <div class="mb-5 side-info">
-        <div class="d-none d-sm-block"><strong>{{ item.award }}</strong>&emsp;|&emsp;{{ item.timeframe }}</div>
-        <div class="d-block d-sm-none"><strong>{{ item.award }}</strong></div>
-        <div class="d-block d-sm-none">{{ item.timeframe }}</div>
-        <div class="small">{{ item.location }}</div>
-        <!-- <div>{{ item.timeframe }}</div> -->
+      <div class="my-5">
+        <h5 class="mb-3">honours + awards</h5>
+        {% for item in site.data.awardlist.docs %}
+        <div class="mb-5 side-info">
+          <div class="d-none d-sm-block"><strong>{{ item.award }}</strong>&emsp;|&emsp;{{ item.timeframe }}</div>
+          <div class="d-block d-sm-none"><strong>{{ item.award }}</strong></div>
+          <div class="d-block d-sm-none">{{ item.timeframe }}</div>
+          <div class="small">{{ item.location }}</div>
+        </div>
+        {% endfor %}
       </div>
-      {% endfor %}
     </div>
   </div>
 </div>
