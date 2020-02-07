@@ -12,11 +12,10 @@ jobs:
               run: |
                 docker run \
                 -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
-                jekyll/builder:latest /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future" \
-                surge _site/
+                jekyll/builder:latest /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future" 
             - name: Install surge and fire deployment
               uses: actions/setup-node@v1
               with:
                 node-version: 8
             - run: npm install -g surge
-            - run: surge ./ ${{ secrets.SURGE_DOMAIN }} --token ${{ secrets.SURGE_TOKEN }}
+            - run: surge _site/ ${{ secrets.SURGE_DOMAIN }} --token ${{ secrets.SURGE_TOKEN }}
