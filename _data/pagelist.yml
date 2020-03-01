@@ -48,8 +48,5 @@ docs:
         thumbnail_url: assets/img/thumbnails/scienceworld_thumb.png
         url: projects/scienceworld.html
 
-# - title: Interests
-#   url: interests.html
-
 - title: About
   url: about.html

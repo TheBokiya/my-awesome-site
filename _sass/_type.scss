@@ -26,6 +26,10 @@ a {
   &.icon-link {
     font-size: 2em;
   }
+
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 h1,
