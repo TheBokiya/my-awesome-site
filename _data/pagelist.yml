@@ -9,9 +9,9 @@ docs:
   subfolderitems:
     - project_type: Development
       subsubfolderitems:
-      - project: SSN Digital Website
+      - project: SSN Website
         thumbnail_url: assets/img/thumbnails/ssn_thumb.png
-        url: projects/ssn-digital.html
+        url: projects/ssn.html
       - project: Sabay Corporate Website
         thumbnail_url: assets/img/thumbnails/sabay_thumb.png
         url: projects/sabay-corp.html
