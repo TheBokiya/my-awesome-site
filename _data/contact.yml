@@ -1,0 +1,11 @@
+- name: email
+  link: mailto:hengbodyka@gmail.com?Subject=Hello
+  icon: fas fa-at
+
+- name: linkedin
+  link: https://www.linkedin.com/in/timbheng/
+  icon: fab fa-linkedin-in
+
+- name: instagram
+  link: https://www.instagram.com/thebokiya/
+  icon: fab fa-instagram
