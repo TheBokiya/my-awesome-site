@@ -14,7 +14,7 @@ docs:
         url: projects/ssn.html
       - project: Sabay Corporate Website
         thumbnail_url: assets/img/thumbnails/sabay_thumb.png
-        url: projects/sabay-corp.html
+        url: projects/sabay.html
       - project: FAM
         thumbnail_url: assets/img/thumbnails/fam_thumb.png
         url: projects/fam.html
