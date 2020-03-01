@@ -7,14 +7,22 @@ docs:
 - title: Projects
   url: projects.html
   subfolderitems:
+    - project_type: Development
+      subsubfolderitems:
+      - project: SSN Website
+        thumbnail_url: assets/img/thumbnails/ssn_thumb.png
+        url: projects/ssn.html
+      - project: Sabay Corporate Website
+        thumbnail_url: assets/img/thumbnails/sabay_thumb.png
+        url: projects/sabay.html
+      - project: FAM
+        thumbnail_url: assets/img/thumbnails/fam_thumb.png
+        url: projects/fam.html
     - project_type: UX/UI Design + Development
       subsubfolderitems:
       - project: SWAPP
         thumbnail_url: assets/img/thumbnails/swapp_thumb.png
         url: projects/swapp.html
-      - project: FAM
-        thumbnail_url: assets/img/thumbnails/fam_thumb.png
-        url: projects/fam.html
       - project: Whatsapp [Concept]
         thumbnail_url: assets/img/thumbnails/whatsapp_thumb.png
         url: projects/whatsapp.html

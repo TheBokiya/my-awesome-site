@@ -8,8 +8,11 @@ title: Projects
   <h1>What I've done</h1>
   <div class="row">
     <div class="col-md-10">
-      <p>as a designer with a programming background, I became a front-end developer and have developed interests in ux/ui design, web development and visual analytics. For the past few years, I've worked on numerous web applications mainly as a ux/ui designer and front-end developer.</p>
-      <p>my academic career has also shaped my interest in research-focused projects mostly in the scope of visual analytics and personal informatics.</p>
+      <p>as a designer with a programming background, I became a front-end developer and have developed interests in
+        ux/ui design, web development and visual analytics. For the past few years, I've worked on numerous web
+        applications mainly as a ux/ui designer and front-end developer.</p>
+      <p>my academic career has also shaped my interest in research-focused projects mostly in the scope of visual
+        analytics and personal informatics.</p>
       <p>below are some of my favourite projects that I've worked on.</p>
     </div>
   </div>
@@ -17,21 +20,21 @@ title: Projects
   <div class="row">
     <div class="col-md-10 col-12">
       {% for item in site.data.pagelist.docs %}
-        {% for entry in item.subfolderitems %}
-        <h5 class="mb-4 mt-5">{{ entry.project_type }}</h5>
-          <div class="row">
-            {% for project_item in entry.subsubfolderitems %}
-            <div class="col-md-2 col-6">
-              <a href="{{ project_item.url }}" class="project-link">
-                <img data-src="{{ project_item.thumbnail_url }}" class="img-thumbnail mx-auto d-block" alt="...">
-                <div class="text-center label">{{ project_item.project }}</div>
-              </a>
-            </div>
-            {% endfor %}
-          </div>
+      {% for entry in item.subfolderitems %}
+      <h5 class="mb-4 mt-5">{{ entry.project_type }}</h5>
+      <div class="row">
+        {% for project_item in entry.subsubfolderitems %}
+        <div class="col-md-2 col-6">
+          <a href="{{ project_item.url }}" class="project-link">
+            <img data-src="{{ project_item.thumbnail_url }}" class="img-thumbnail mx-auto d-block" alt="...">
+            <div class="text-center label">{{ project_item.project }}</div>
+          </a>
+        </div>
         {% endfor %}
-      {% endfor %}
       </div>
+      {% endfor %}
+      {% endfor %}
     </div>
   </div>
+</div>
 </div>

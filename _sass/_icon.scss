@@ -8,9 +8,17 @@
     color: $color-secondary;
     @include transition(background-color 0.3s ease);
     @include transition(color 0.3s ease);
+
     &:hover {
       background-color: $color-secondary;
-      color: $color-white;;
+      color: $color-white;
+      ;
     }
+  }
+}
+
+.link-icon {
+  svg {
+    color: $color-secondary;
   }
 }
