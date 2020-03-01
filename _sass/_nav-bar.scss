@@ -1,5 +1,7 @@
 .navbar {
   background: $color-white;
+  transition: top 0.3s;
+  @include dropshadow();
 }
 
 .navbar-brand {
