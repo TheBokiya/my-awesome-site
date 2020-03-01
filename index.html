@@ -3,16 +3,10 @@ layout: default
 title: tim bodyka heng
 ---
 {% include nav-bar.html %}
-<!-- <div id="bg">
-  <img src="/assets/img/index-bg.jpg" alt="">
-</div> -->
 <div class="container h-100">
-  <!-- <a href="#" class="glitch d-none d-sm-block">TIM BODYKA HENG</a> -->
   <div class="row">
     <div class="col-12">
-      <div class="sub-index highlight d-none d-sm-block">tim bodyka heng</div>
-      <div class="sub-index highlight d-block d-sm-none">TIM BODYKA HENG</div>
-      <!-- <div class="sub-index highlight">ហេង បូឌីកា</div> -->
+      <div class="sub-index highlight">tim bodyka heng</div>
     </div>
   </div>
   <div class="row">
@@ -28,12 +22,11 @@ title: tim bodyka heng
   </div>
   <div class="row mt-5">
     <div class="col-md-8 col-xs-12">
-      <a href="mailto:hengbodyka@gmail.com?Subject=Hello" class="contact-icon mr-3"><i class="fas fa-at"></i></a>
-      <a href="https://www.linkedin.com/in/timbheng/" target="_blank" class="contact-icon mr-3"><i class="fab fa-linkedin-in"></i></a>
-      <!-- <a href="https://twitter.com/tim_heng" target="_blank" class="contact-icon mr-3"><i class="fab fa-twitter"></i></a> -->
-      <a href="https://www.instagram.com/thebokiya/" target="_blank" class="contact-icon mr-3"><i class="fab fa-instagram"></i></a>
-      <a href="https://m.me/tim.bheng" target="_blank" class="contact-icon mr-3"><i class="fab fa-facebook-messenger"></i></a>
-      <!-- <a href="https://api.whatsapp.com/send?phone=17787092448" target="_blank" class="contact-icon mr-3"><i class="fab fa-whatsapp"></i></a> -->
+      {% for i in site.data.contact %}
+      <a href="{{ i.link }}" class="contact-icon mr-3" target="_blank">
+        <i class="{{ i.icon }}"></i>
+      </a>
+      {% endfor %}
       <p class="fine-print">ps: if all else fails, send an owl.</p>
     </div>
   </div>
