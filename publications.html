@@ -1,0 +1,42 @@
+---
+layout: default
+title: Publications
+---
+{% include nav-bar.html %}
+
+<div class="container">
+    <h1>What I've Written</h1>
+
+    <div class="row">
+        <div class="col-md-10 col-12">
+            <p> Having spent many years in academia, I've been involved in multiple research projects and have
+                authored/co-authored multiple publications as well. You can check out all of my publications below.</p>
+        </div>
+    </div>
+    <hr class="thin">
+    <div class="row">
+        <div class="col-md-10 col-12">
+            {% for p in site.data.publications %}
+            <div class="mb-5 side-info">
+                <div class="row">
+                    <div class="col-2">Title</div>
+                    <div class="col-10"><b>{{ p.title }}</b></div>
+                </div>
+                <div class="row">
+                    <div class="col-2">Authors</div>
+                    <div class="col-10">{{ p.authors }}</div>
+                </div>
+                <div class="row">
+                    <div class="col-2">Year</div>
+                    <div class="col-10">{{ p.year }}</div>
+                </div>
+                <div class="row">
+                    <div class="col-2">Link</div>
+                    <div class="col-10"><a href="{{ p.link }}" target="_blank">{{ p.link }}<i
+                        class="fas fa-external-link-alt ml-2"></i></a></div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

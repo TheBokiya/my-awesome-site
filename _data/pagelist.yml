@@ -50,5 +50,8 @@ docs:
         thumbnail_url: assets/img/thumbnails/whatsapp_thumb.png
         url: projects/whatsapp.html
 
+- title: Publications
+  url: publications.html
+
 - title: About
   url: about.html
