@@ -1,0 +1,29 @@
+- id: 1
+  year: 2018
+  title: "Sleep-Wake-Behaviour App: Towards developing a database for informing e-coaching solutions for neurodevelopmental disorders in children"
+  authors: "Tim Bodyka Heng, Ankit Gupta, Chris Shaw, Caylee Raber, Markus Schilling, Nina Chen, Danni Peng, Banban Zhao, Osman Ipsiroglu, Mai Berger, and Nadia Beyzaei"
+  link: https://dl.acm.org/doi/abs/10.1145/3240925.3240976
+  
+- id: 2
+  year: 2018
+  title: "FitViz-Ad: A Non-Intrusive Reminder to Encourage Non-Sedentary Behaviour"
+  authors: "Tim Bodyka Heng, Ankit Gupta, Chris Shaw"
+  link: https://www.ingentaconnect.com/content/ist/ei/2018/00002018/00000001/art00004
+
+- id: 3
+  year: 2018
+  title: "FitViz-Ad: A non-intrusive reminder to support and encourage rheumatoid arthritis patients with physical activity"
+  authors: "Tim Bodyka Heng"
+  link: http://summit.sfu.ca/item/17915
+
+- id: 4
+  year: 2018
+  title: "Towards developing an e-coach to support arthritis patients in maintaining a physically active lifestyle"
+  authors: "Ankit Gupta, Tim Bodyka Heng, Chris Shaw, Linda Li, Lynne Feehan"
+  link: https://dl.acm.org/doi/abs/10.1145/3240925.3240954
+
+- id: 5
+  year: 2018
+  title: "Designing pervasive technology for physical activity self-management in arthritis patients"
+  authors: "Ankit Gupta, Tim Bodyka Heng, Chris Shaw, Linda Li, Lynne Feehan"
+  link: https://dl.acm.org/doi/abs/10.1145/3240925.3240956
