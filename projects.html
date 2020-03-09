@@ -21,8 +21,8 @@ title: Projects
     <div class="col-md-10 col-12">
       {% for item in site.data.pagelist.docs %}
       {% for entry in item.subfolderitems %}
-      <h5 class="mb-4 mt-5">{{ entry.project_type }}</h5>
-      <div class="row">
+      <h5 class="mb-4">{{ entry.project_type }}</h5>
+      <div class="row my-5">
         {% for project_item in entry.subsubfolderitems %}
         <div class="col-md-2 col-6">
           <a href="{{ project_item.url }}" class="project-link">

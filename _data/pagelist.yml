@@ -18,14 +18,9 @@ docs:
       - project: FAM
         thumbnail_url: assets/img/thumbnails/fam_thumb.png
         url: projects/fam.html
-    - project_type: UX/UI Design + Development
-      subsubfolderitems:
       - project: SWAPP
         thumbnail_url: assets/img/thumbnails/swapp_thumb.png
         url: projects/swapp.html
-      - project: Whatsapp [Concept]
-        thumbnail_url: assets/img/thumbnails/whatsapp_thumb.png
-        url: projects/whatsapp.html
 
     - project_type: Visual Analytics
       subsubfolderitems:
@@ -47,6 +42,13 @@ docs:
       - project: Science World Evaluation
         thumbnail_url: assets/img/thumbnails/scienceworld_thumb.png
         url: projects/scienceworld.html
+
+
+    - project_type: UX/UI Design
+      subsubfolderitems:
+      - project: Whatsapp [Concept]
+        thumbnail_url: assets/img/thumbnails/whatsapp_thumb.png
+        url: projects/whatsapp.html
 
 - title: About
   url: about.html
